@@ -1,8 +1,41 @@
 <div class="container">
-	<h1>New Link</h1>
-	<p>
-	 Original: <a href="<%= url %>"><%= url %></a><br /><br />
-	 New:<a href="/<%= hash %>"><%= hash %></a>
-	</p>
+	<div class="row text-center">
+<!-- 		<div class="col-md-8 col-md-offset-4"> -->
+			<h1>TeenyLinks</h1>
+<!-- 		</div> -->
+	</div>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<form action="/showLink" method="POST" role="form">
+				<legend></legend>
+			
+				<div class="form-group">
+					<input type="text" class="form-control" id="" placeholder="Place URL Here" name="q" autofocus="autofocus">
+				</div>
+			
+				
+			
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+		<div class="col-md-3"></div>
+		
+	</div>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+		<div class="text-center">
+			<h3>New Link</h3>
+			<p>
+			 Original: <a href="<%= url %>"><%= url %></a><br /><br />
+			 New: <a href="/<%= hash %>">teenylinks.com/<%= hash %></a>
+			</p>
+		</div>
+		</div>
+		<div class="col-md-3"></div>
+
+	</div>
+	
 
 </div>
