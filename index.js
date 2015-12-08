@@ -31,9 +31,11 @@ app.post("/showLink", function(req,res){
 	});
 });
 
-app.get('*', function(req,res){
-	res.render('404');
-});
+// app.get('*', function(req,res){
+// 	if (res.status === 404){
+// 		res.render('404');
+// 	}
+// });
 app.get('/showLink/:id', function(req,res){
 	var id = req.params.id;
 	db.link.findById(id).then(function(row){
