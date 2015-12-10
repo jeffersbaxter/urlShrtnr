@@ -34,6 +34,8 @@ app.post("/showLink", function(req,res){
 // app.get('*', function(req,res){
 // 	if (res.status === 404){
 // 		res.render('404');
+// 	} else {
+// 		console.log('all good');
 // 	}
 // });
 app.get('/showLink/:id', function(req,res){
@@ -54,6 +56,8 @@ app.get('/:hash', function(req,res){
 		res.redirect(url);
 	});
 });
+
+
 
 
 
